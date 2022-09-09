@@ -1,0 +1,50 @@
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="icon.ico">
+    
+        <title>اسکل سنج</title>
+        
+        
+          <meta charset="UTF-8">
+      <meta name="description" content="یه ابزار رایگان برای سنجش سطح اسکل بودن شما!">
+      <meta name="keywords" content="oskol, oskol-sanj">
+      <meta name="author" content="MohsenEMX">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Discord" property="og:Oskol_sanj">
+        <meta property="og:image" content="image.png" />
+
+        <script>
+            function showRandomNumber(){
+                document.getElementById("myNumber").innerHTML = Math.round(Math.random() * 100) + '%';
+            }
+        </script>
+        <style>
+            #myNumber{
+                font-size:100px;
+                text-align:center;
+                font-family: 'Tschichold', sans-serif;
+            }
+          @font-face {
+  font-family: 'Yekan';
+  src: url('Yekan.woff') format('woff'),
+         url('Yekan.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tschichold';
+  src: url('Tschichold.woff') format('woff'),
+         url('Tschichold.ttf') format('truetype');
+}
+      .main {
+        font-family: 'Yekan', sans-serif;
+        font-size:100px;
+        text-align:center;
+      }
+        </style>
+    </head>
+    <body onload="showRandomNumber();">
+        <h3 class="main">شما </h3>
+        <div><p id="myNumber"></p></div>
+        <h3 class="main">اسکل هستید.</h3>
+    </body>
+</html>
